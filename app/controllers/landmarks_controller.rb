@@ -27,5 +27,5 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id'
-  erb :'/landmarks/show'
+  redirect "/landmarks/#{@landmark.id}"
 end
