@@ -1,0 +1,16 @@
+<h2>Edit that Figure!: <%=@figure.name%></h2>
+<form action="/figures/<%=@figure.id%>" method="POST">
+
+  <label>Edit Figure Name</label>
+  <input type="text" id="figure[name]" value="<%=@figure.name%>" name="figure[name]">
+
+  <label>Edit Figure Title</label>
+  <%Title.all.each do |title| %>
+  <input type="checkbox" id="figure[title_ids]" value="<%=title.id" id="<%=title.name%>"<%='checked' if @figure.title_ids.include?(title.id) %>></input><br>
+  #figure title
+  #figure landmark
+
+
+
+
+</form>
