@@ -1,5 +1,5 @@
 class FiguresController < ApplicationController
-
+set :method_override, true
 #view form to create a new figure
 
   get '/figures' do
