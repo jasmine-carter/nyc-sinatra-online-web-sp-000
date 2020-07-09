@@ -30,3 +30,4 @@ class LandmarksController < ApplicationController
   binding.pry
   redirect "/landmarks/#{@landmark.id}"
 end
+end
