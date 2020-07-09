@@ -4,12 +4,16 @@
   <label>Edit Figure Name</label>
   <input type="text" id="figure_name" value="<%=@figure.name%>" name="figure[name]">
 
-  <label>Edit Figure Title</label>
+  <label>Edit Figure Titles</label>
   <%Title.all.each do |title| %>
   <input type="checkbox" id="figure[title_ids]" value="<%=title.id%>" id="<%=title.name%>" <%='checked' if @figure.title_ids.include?(title.id) %>></input><br>
   <% end %>
-  #figure title
-  #figure landmark
+
+  <label>Edit Figure Landmarks</label>
+  <%Landmark.all.each do |landmark|%>
+  <input type="checkbox" id="landmark[id]" value="<%=landmark.id%>" <%='checked' if @figure.landmarks.include?(landmark.id) %>></input><br>
+  <%end%>
+
 
 
 
