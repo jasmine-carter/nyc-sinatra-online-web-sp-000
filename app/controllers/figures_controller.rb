@@ -1,5 +1,4 @@
 class FiguresController < ApplicationController
-set :method_override, true
 #view form to create a new figure
 
   get '/figures' do
@@ -34,7 +33,7 @@ set :method_override, true
   end
 
   patch '/figures/:id' do
-    binding.pry
+    #binding.pry
     @figure = Figure.find_by(id: [params][:id])
     redirect '/figures/:id'
   end
