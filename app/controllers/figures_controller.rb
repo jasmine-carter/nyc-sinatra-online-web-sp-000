@@ -18,7 +18,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/:id/edit' do
-    binding.pry
+    #binding.pry
     @figure = Figure.find_by(id: params[:id])
     @titles = Title.all
     @landmarks = Landmark.all
@@ -33,7 +33,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
-    #binding.pry
+    #shotbinding.pry
     @figure = Figure.find_by(id: [params][:id])
     redirect '/figures/:id'
   end
