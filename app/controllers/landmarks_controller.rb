@@ -26,8 +26,8 @@ class LandmarksController < ApplicationController
     erb :'/landmark/:id'
   end
 
-  patch '/landmarks/:id'
+  patch '/landmarks/:id' do
   binding.pry
   redirect "/landmarks/#{@landmark.id}"
-end
+  end
 end
