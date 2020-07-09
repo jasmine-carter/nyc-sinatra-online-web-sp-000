@@ -6,7 +6,7 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-    binding.pry
+    #binding.pry
     @landmark = Landmark.find_or_create_by(name: params["landmark"]["name"])
     erb :'/landmark/:id'
   end
