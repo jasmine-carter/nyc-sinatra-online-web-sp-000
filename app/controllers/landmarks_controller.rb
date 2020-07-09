@@ -12,6 +12,7 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/:id/edit' do
+    binding.pry
     erb :'/landmarks/edit'
   end
 
