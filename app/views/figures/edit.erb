@@ -6,7 +6,7 @@
 
   <label>Edit Figure Title</label>
   <%Title.all.each do |title| %>
-  <input type="checkbox" id="figure[title_ids]" value="<%=title.id" id="<%=title.name%>"<%='checked' if @figure.title_ids.include?(title.id) %>></input><br>
+  <input type="checkbox" id="figure[title_ids]" value="<%=title.id%>" id="<%=title.name%>" <%='checked' if @figure.title_ids.include?(title.id) %>></input><br>
   #figure title
   #figure landmark
 
