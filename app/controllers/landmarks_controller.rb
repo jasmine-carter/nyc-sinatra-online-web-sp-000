@@ -5,7 +5,7 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/new'
   end
 
-  post '/landmarks/new' do
+  post '/landmarks' do
     binding.pry
     erb :'/landmark/:id'
   end
