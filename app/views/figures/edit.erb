@@ -2,7 +2,7 @@
 <form action="/figures/<%=@figure.id%>" method="POST">
 
   <label>Edit Figure Name</label>
-  <input type="text" id="figure[name]" value="<%=@figure.name%>" name="figure[name]">
+  <input type="text" id="figure_name" value="<%=@figure.name%>" name="figure[name]">
 
   <label>Edit Figure Title</label>
   <%Title.all.each do |title| %>
