@@ -25,4 +25,7 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find_or_create_by(name: params["landmark"]["name"])
     erb :'/landmark/:id'
   end
+
+  patch '/landmarks/:id'
+  erb :'/landmarks/show'
 end
