@@ -6,7 +6,8 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/:id' do
-
+    binding.pry
+    @landmark = params
   end
 
   get '/landmarks' do
