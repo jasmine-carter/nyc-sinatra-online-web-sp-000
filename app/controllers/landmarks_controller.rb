@@ -27,7 +27,7 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
-  binding.pry
+  @landmark = Landmark.find_by(id: params["id"])
   redirect "/landmarks/#{@landmark.id}"
   end
 end
