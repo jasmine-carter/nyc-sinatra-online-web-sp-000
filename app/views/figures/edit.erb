@@ -12,7 +12,6 @@
 
   <h2><label>Edit Figure Landmarks</label></h2>
   <%Landmark.all.each do |landmark|%>
-  <label><%= landmark.name %></label>
   <input type="checkbox" id="landmark[id]" value="<%=landmark.%>" <%='checked' if @figure.landmarks.include?(landmark.id) %>></input><br>
   <%end%>
 
