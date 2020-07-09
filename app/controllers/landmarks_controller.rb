@@ -8,6 +8,7 @@ class LandmarksController < ApplicationController
   get '/landmarks/:id' do
     binding.pry
     @landmark = params
+    erb :'/landmarks:id'
   end
 
   get '/landmarks' do
